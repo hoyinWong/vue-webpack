@@ -23,6 +23,16 @@ path.joinFormat = function(){
 };
 
 module.exports = {
+     devServer:{
+        host: '127.0.0.1',
+        progress: true,
+        colors: true,
+        contentBase: config.localserver.root,
+        port: 8888,
+        // hot: true,
+        // inline: true
+
+    },
     //页面入口文件配置
     entry: {
         'boot': './src/boot/boot.js',
